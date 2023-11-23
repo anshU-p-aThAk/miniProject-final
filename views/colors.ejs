@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/colors.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="main-heading">
+            <p>Color Quiz</p>
+        </div>
+        <div class="quiz-div">
+            <div class="image-div">
+                <img class = "main-img" src=<%=u%>>
+            </div>
+            <div class="ques-div">
+                <p class = "ques-line">Identify the Color</p>
+                <div class="opt">
+                    <input type="radio" id="opt1" name="options" value="<%=names[0] %>">
+                    <label for="opt1"><%=names[0] %></label><br>
+                    <input type="radio" id="opt2" name="options" value="<%=names[1] %>">
+                    <label for="opt2"><%=names[1] %></label><br>
+                    <input type="radio" id="opt3" name="options" value="<%=names[2] %>">
+                    <label for="opt3"><%=names[2] %></label><br>
+                    <input type="radio" id="opt4" name="options" value="<%=names[3] %>">
+                    <label for="opt4"><%=names[3] %></label><br>
+                </div>
+            </div>
+        </div>
+        <p class = "final" id = 'result'></p>
+        <div class="button-div">
+            <button onclick="reloadPage()" class="button-23" role="button">Next</button>
+            <button onclick="redirectToPage()" class="button-23" role="button">Exit</button>
+        </div>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    const resultDiv = document.getElementById('result');
+    const correctAnswer = '<%= ans %>'; // Assuming you pass correctAns to the template
+
+    radioButtons.forEach((radioButton) => {
+    radioButton.addEventListener('click', (event) => {
+        const selectedOption = event.target.value;
+
+        if (selectedOption === correctAnswer) {
+            displayResult('Correct!', correctAnswer);
+        } else {
+            displayResult('Wrong!', correctAnswer);
+        }
+    });
+});
+
+    function displayResult(result, correctAnswer) {
+    if (result === 'Wrong!') {
+        resultDiv.textContent = result + ' The correct answer is: ' + correctAnswer;
+    } else {
+        resultDiv.textContent = result;
+    }
+}
+});
+function reloadPage() {
+      // Reload the current page
+      window.location.reload();
+    }
+
+    function redirectToPage() {
+    window.location.href = '/gameSelect';
+  }
+
+
+    </script>
+</body>
+</html>

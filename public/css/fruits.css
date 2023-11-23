@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.main-div {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fruits-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.main-heading {
+    color: white;
+    font-size: 60px;
+    border: 2px solid white;
+    text-shadow: 5px 7px 10px black;
+    margin-bottom: 5%;
+}
+
+/* Quiz Div */
+
+.quiz-div {
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+.image-div {
+    width: 40%;
+    height: 50vh;
+    border: 5px solid white;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+}
+
+.ques-line {
+    font-size: 55px;
+    color: white;
+    text-shadow: 10px 7px 10px black;
+}
+
+.opt {
+    color: white;
+    font-size: 35px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.final {
+    color: white;
+    margin-top: 50px;
+    font-size: 40px;
+    text-shadow: 10px 7px 10px black;
+
+}
+
+.button-div {
+    position: fixed;
+      bottom: 40px;
+      right: 40px;
+}
+
+
+
+/* CSS */
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Style the radio buttons */
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white; 
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="radio"]:checked {
+    border-color: white; /* Green border when checked */
+    background: radial-gradient(circle at 50% 50%, white, white); /* Green gradient */
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type="radio"]:hover {
+    transform: scale(1.4);
+  }

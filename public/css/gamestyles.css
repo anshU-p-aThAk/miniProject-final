@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.main-sec {
+    background-image: url(../images/options-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.heading {
+    font-size: 60px;
+    color: #1c96c5;
+    text-shadow: 5px 7px 10px #87ceeb;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 30px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+/* Game Section */
+
+.game-containers {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    justify-content: center;
+    align-items: center;
+
+}
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin:1.5%;
+    display: inline-block;
+    width: 31%; 
+    height: 200px; 
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  .game1 {
+    background-image: url(../images/fruits.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .game2 {
+    background-image: url(../images/animals.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .game3 {
+    background-image: url(../images/alphabets.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+  }
+
+  .game4 {
+    background-image: url(../images/colors.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .text-over {
+    opacity: 0;
+  }
+  .items:hover .text-over {
+    transition: opacity 2s ease;
+    opacity: 1;
+  }
+
+  .game-title {
+    color: white;
+    font-size: 50px;
+    text-shadow: 5px 7px 10px black;
+  }
+
+  .fruity {
+    margin-top: 30px;
+  }
