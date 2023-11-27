@@ -131,8 +131,8 @@ input[type="radio"] {
   }
   
   input[type="radio"]:checked {
-    border-color: white; /* Green border when checked */
-    background: radial-gradient(circle at 50% 50%, white, white); /* Green gradient */
+    border-color: white; 
+    background: radial-gradient(circle at 50% 50%, white, white);
   }
   
   label {

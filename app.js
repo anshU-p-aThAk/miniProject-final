@@ -118,6 +118,11 @@ const colorImages = {
     white: 'images/white.avif'
 };
 
+// Alphabets Game
+app.get('/game3', (req, res) => {
+    res.render("alphabets.ejs");
+});
+
 app.get('/game4', (req, res) => {
     function getRandomColorNames() {
         const colors = ['red', 'orange', 'green', 'blue', 'yellow', 'pink', 'purple', 'brown', 'black', 'white'];

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const radioButtons = document.querySelectorAll('input[type="radio"]');
     const resultDiv = document.getElementById('result');
-    const correctAnswer = '<%- ans %>'; // Assuming you pass correctAns to the template
+    const correctAnswer = '<%- ans %>';
     alert(correctAnswer);
 
     radioButtons.forEach((radioButton) => {
