@@ -37,6 +37,11 @@ a {
     height: 120px;
     width: 250px;
     filter: brightness(110%);
+    transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+  transform: scale(1.1);
 }
 
 /* Nav bar */
@@ -161,6 +166,7 @@ a {
     font-size: 30px;
     text-shadow: 2px 1px orange;
     font-weight: bold;
+    text-align: center;
 }
 
 .sec2::before {
@@ -181,6 +187,12 @@ a {
 .welcome-head {
     font-size: 60px;
     font-weight: bolder;
+    text-shadow: 5px 7px 10px black;
+}
+
+.welcome-content {
+    text-shadow: 5px 7px 10px black;
+    font-size: 25px;
 }
 
 /* Footer Section */
